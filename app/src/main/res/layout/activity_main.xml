@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:targetApi="JELLY_BEAN_MR2">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/titleMarginTop"
+                android:gravity="center_horizontal"
+                android:text="@string/Title"
+                android:textColor="@color/Title"
+                android:textSize="@dimen/Title"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/uName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/uNameMargin"
+                android:layout_marginLeft="@dimen/leftMargin"
+                android:hint="@string/nameHint"
+                android:inputType="textCapWords" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/questionMargin"
+                android:text="@string/questions"
+                android:textColor="@color/questionHeading"
+                android:textSize="@dimen/questions"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/q1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/questionMargin"
+                android:layout_marginLeft="@dimen/leftMargin"
+                android:text="@string/Q1"
+                android:textColor="@android:color/background_dark"
+                android:textSize="@dimen/defaultQuestionSize"
+                android:textStyle="italic|bold" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/q1_A"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/defaultMargin"
+                    android:layout_marginLeft="@dimen/leftMargin"
+                    android:text="@string/Q1A"
+                    android:textSize="@dimen/defaultAnswerSize" />
+
+                <RadioButton
+                    android:id="@+id/q1_B"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/defaultMargin"
+                    android:layout_marginLeft="@dimen/leftMargin"
+                    android:text="@string/Q1B"
+                    android:textSize="@dimen/defaultAnswerSize" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/q2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/questionMargin"
+                android:layout_marginLeft="@dimen/leftMargin"
+                android:text="@string/Q2"
+                android:textColor="@android:color/background_dark"
+                android:textSize="@dimen/defaultQuestionSize"
+                android:textStyle="italic|bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/q2_A"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/defaultMargin"
+                    android:layout_marginLeft="@dimen/leftMargin"
+                    android:text="@string/Q2A"
+                    android:textSize="@dimen/defaultAnswerSize" />
+
+                <CheckBox
+                    android:id="@+id/q2_B"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/defaultMargin"
+                    android:layout_marginLeft="@dimen/leftMargin"
+                    android:text="@string/Q2B"
+                    android:textSize="@dimen/defaultAnswerSize" />
+
+                <CheckBox
+                    android:id="@+id/q2_C"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/defaultMargin"
+                    android:layout_marginLeft="@dimen/leftMargin"
+                    android:text="@string/Q2C"
+                    android:textSize="@dimen/defaultAnswerSize" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/q3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/questionMargin"
+                    android:layout_marginLeft="@dimen/leftMargin"
+                    android:text="@string/Q3"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="@dimen/defaultQuestionSize"
+                    android:textStyle="italic|bold" />
+
+                <ImageView
+                    android:id="@+id/q3_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="@dimen/defaultMargin"
+                    android:layout_marginLeft="@dimen/leftMargin"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/stack" />
+
+                <EditText
+                    android:id="@+id/q3_ans"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/defaultMargin"
+                    android:layout_marginLeft="@dimen/leftMargin"
+                    android:hint="@string/q3Hint"
+                    android:inputType="textCapCharacters" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/q4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/questionMargin"
+                    android:layout_marginLeft="@dimen/leftMargin"
+                    android:text="@string/Q4"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="@dimen/defaultQuestionSize"
+                    android:textStyle="italic|bold" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="@dimen/defaultMargin"
+                    android:layout_marginLeft="@dimen/leftMargin"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/tree" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <RadioButton
+                        android:id="@+id/q4_A"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/defaultMargin"
+                        android:layout_marginLeft="@dimen/leftMargin"
+                        android:text="@string/Q4A"
+                        android:textSize="@dimen/defaultAnswerSize" />
+
+
+                    <RadioButton
+                        android:id="@+id/q4_B"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/defaultMargin"
+                        android:layout_marginLeft="@dimen/leftMargin"
+                        android:text="@string/Q4B"
+                        android:textSize="@dimen/defaultAnswerSize" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/q5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/questionMargin"
+                    android:layout_marginLeft="@dimen/leftMargin"
+                    android:text="@string/Q5"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="@dimen/defaultQuestionSize"
+                    android:textStyle="italic|bold" />
+
+                <EditText
+                    android:id="@+id/q5_ans"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/defaultMargin"
+                    android:layout_marginLeft="@dimen/leftMargin"
+                    android:hint="@string/q5Hint"
+                    android:inputType="textCapCharacters" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/score_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:textColor="@color/scoreCard"
+                android:textSize="@dimen/scoreCard"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/score_summary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/defaultMargin"
+                android:gravity="center_horizontal"
+                android:textColor="@color/ScoreDetails"
+                android:textSize="@dimen/defaultQuestionSize"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/buttonMargin"
+                android:gravity="center_horizontal"
+                android:onClick="submitAnswer"
+                android:text="@string/submit" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

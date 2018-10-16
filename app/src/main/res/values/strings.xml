@@ -1,0 +1,40 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Quiz App</string>
+    <string name="Title">Data Structure Quizz</string>
+    <string name="nameHint">Enter Your Name</string>
+    <string name="questions">Questions:</string>
+    <string name="Q1">Q.1 -> What is the  "next" field of structure node in the Queue?</string>
+    <string name="Q1A">Results into the storage of queue elements.</string>
+    <string name="Q1B">Results into the storage of address of next node by holding the next
+        element of queue.</string>
+    <string name="Q2">Q.2 -> Which among the below mentioned entities is / are essential for an
+        Array Representation of a Queue? </string>
+    <string name="Q2A">An array to hold queue elements.</string>
+    <string name="Q2B">A variable to hold the index of front element.</string>
+    <string name="Q2C">A variable to hold the index of rear element.</string>
+    <string name="Q3">Q.3 -> From the below mentioned image write the name of
+        data structure?</string>
+    <string name="q3Hint">Write the name of Data Structure</string>
+    <string name="submit">Submit Answer</string>
+    <string name="Q4">Q.4 -> Is below mentioned image is representing a "'Linked List'"
+        Data Structure?(Yes/No) </string>
+    <string name="Q4A">Yes</string>
+    <string name="Q4B">No</string>
+    <string name="Q5">Q.5 -> Process of inserting an element in stack is called?</string>
+    <string name="q5Hint">Answer</string>
+    <string name="studentName">Name:
+        <xliff:g example="Saurin" id="sName">%s </xliff:g>
+    </string>
+    <string name="score">Total Score:
+        <xliff:g id="total">%s </xliff:g>
+        out of 5
+    </string>
+    <string name="performance">Performance:
+        <xliff:g id="excellentScore">%s </xliff:g>
+    </string>
+    <string name="analysis">Question-wise Analysis:
+        <xliff:g id="rightOrWrong">%s </xliff:g>
+    </string>
+</resources>
+
+

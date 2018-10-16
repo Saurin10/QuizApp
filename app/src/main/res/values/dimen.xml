@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="Title">32sp</dimen>
+    <dimen name="titleMarginTop">15dp</dimen>
+    <dimen name="uNameMargin">15dp</dimen>
+    <dimen name="questions">22sp</dimen>
+    <dimen name="questionMargin">15dp</dimen>
+    <dimen name="defaultQuestionSize">18sp</dimen>
+    <dimen name="defaultAnswerSize">16sp</dimen>
+    <dimen name="defaultMargin">10dp</dimen>
+    <dimen name="buttonMargin">15dp</dimen>
+    <dimen name="leftMargin">15dp</dimen>
+    <dimen name="scoreCard">24sp</dimen>
+</resources>
