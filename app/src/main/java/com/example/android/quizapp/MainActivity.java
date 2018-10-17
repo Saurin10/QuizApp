@@ -2,16 +2,20 @@ package com.example.android.quizapp;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
     //Score variable
-    int score = 0;
+    private int score = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void submitAnswer(View view) {
         score = resetScore();
-        displayScoreHeading("Score Card:");
+       // displayScoreHeading("Score Card:");
         score = calculateScore(score);
         String sName = ((EditText) findViewById(R.id.uName)).getText().toString();
         String scoreSummary = getString(R.string.studentName, sName);
@@ -30,7 +34,26 @@ public class MainActivity extends AppCompatActivity {
         scoreSummary += '\n' + getString(R.string.performance, performance);
         String analysis = detailAnalysis();
         scoreSummary += '\n' + getString(R.string.analysis, analysis);
-        displayMessage(scoreSummary);
+        //displayMessage(scoreSummary);
+//        Toast toast = Toast.makeText(MainActivity.this, scoreSummary, Toast.LENGTH_SHORT);
+//        toast.setGravity(Gravity.CENTER_HORIZONTAL, 0, 0);
+//        toast.show();
+        LayoutInflater inflater = getLayoutInflater();
+
+        View toastLayout = inflater.inflate(R.layout.my_toast,
+                (ViewGroup) findViewById(R.id.toast_root_view));
+
+        TextView header = (TextView) toastLayout.findViewById(R.id.toast_header);
+        header.setText("Grade Card:");
+
+        TextView body = (TextView) toastLayout.findViewById(R.id.toast_body);
+        body.setText(scoreSummary);
+
+        Toast toast = new Toast(getApplicationContext());
+        toast.setGravity(Gravity.CENTER, 0, 0);
+        toast.setDuration(Toast.LENGTH_LONG);
+        toast.setView(toastLayout);
+        toast.show();
     }
 
     private int calculateScore(int s) {
@@ -64,7 +87,8 @@ public class MainActivity extends AppCompatActivity {
 
     private int q3() {
         String ans = ((EditText) findViewById(R.id.q3_ans)).getText().toString();
-        if (ans.equals("STACK") || ans.equals("STACK "))
+        ans = ans.trim();
+        if (ans.equals("STACK"))
             return 1;
         return 0;
     }
@@ -117,13 +141,13 @@ public class MainActivity extends AppCompatActivity {
             return "Needs to start from scratch, Poor Score!!";
     }
 
-    private void displayScoreHeading(String message) {
-        TextView orderSummaryTextView = findViewById(R.id.score_heading);
-        orderSummaryTextView.setText(message);
-    }
-
-    private void displayMessage(String message) {
-        TextView orderSummaryTextView = findViewById(R.id.score_summary);
-        orderSummaryTextView.setText(message);
-    }
+//    private void displayScoreHeading(String message) {
+//        TextView orderSummaryTextView = findViewById(R.id.score_heading);
+//        orderSummaryTextView.setText(message);
+//    }
+//
+//    private void displayMessage(String message) {
+//        TextView orderSummaryTextView = findViewById(R.id.score_summary);
+//        orderSummaryTextView.setText(message);
+//    }
 }
