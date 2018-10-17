@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toast_root_view"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/background_light"
     android:orientation="vertical"
-    android:id="@+id/toast_root_view"
-    android:padding="24dp"
-    android:background="@android:color/background_light">
+    android:padding="24dp">
 
     <TextView
         android:id="@+id/toast_header"
-        android:textSize="20dp"
-        android:textColor="@color/scoreCard"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:textColor="@color/scoreCard"
+        android:textSize="20dp" />
 
     <TextView
         android:id="@+id/toast_body"
-        android:textColor="@color/ScoreDetails"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:textColor="@color/ScoreDetails" />
 
 </LinearLayout>

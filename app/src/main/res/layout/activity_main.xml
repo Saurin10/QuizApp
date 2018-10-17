@@ -245,25 +245,25 @@
             </LinearLayout>
 
             <!--<TextView-->
-                <!--android:id="@+id/score_heading"-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_gravity="center_horizontal"-->
-                <!--android:gravity="center_horizontal"-->
-                <!--android:textColor="@color/scoreCard"-->
-                <!--android:textSize="@dimen/scoreCard"-->
-                <!--android:textStyle="bold|italic" />-->
+            <!--android:id="@+id/score_heading"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:gravity="center_horizontal"-->
+            <!--android:textColor="@color/scoreCard"-->
+            <!--android:textSize="@dimen/scoreCard"-->
+            <!--android:textStyle="bold|italic" />-->
 
             <!--<TextView-->
-                <!--android:id="@+id/score_summary"-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_gravity="center_horizontal"-->
-                <!--android:layout_margin="@dimen/defaultMargin"-->
-                <!--android:gravity="center_horizontal"-->
-                <!--android:textColor="@color/ScoreDetails"-->
-                <!--android:textSize="@dimen/defaultQuestionSize"-->
-                <!--android:textStyle="bold" />-->
+            <!--android:id="@+id/score_summary"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:layout_margin="@dimen/defaultMargin"-->
+            <!--android:gravity="center_horizontal"-->
+            <!--android:textColor="@color/ScoreDetails"-->
+            <!--android:textSize="@dimen/defaultQuestionSize"-->
+            <!--android:textStyle="bold" />-->
 
             <Button
                 android:layout_width="wrap_content"

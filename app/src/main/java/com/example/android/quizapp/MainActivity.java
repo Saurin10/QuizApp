@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void submitAnswer(View view) {
         score = resetScore();
-       // displayScoreHeading("Score Card:");
+        // displayScoreHeading("Score Card:");
         score = calculateScore(score);
         String sName = ((EditText) findViewById(R.id.uName)).getText().toString();
         String scoreSummary = getString(R.string.studentName, sName);
